@@ -1,30 +1,35 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# NextJS Demo
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
+1. Install dependencies
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Create a Sentry project and configure Sentry with your `SENTRY_DSN` in `.env` and include this in `_app.js`
+3. Include your `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, and `SENTRY_PROJECT` to the `Makefile`. If you haven't created an Auth Token, you can create one from your Sentry organization on the [API Keys](https://sentry.io/settings/account/api/auth-tokens/) page 
+4. Make sure that your GitHub repo is integrated into your Sentry organization.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Run
+5. Run the dev server
+```
+$ PORT=3001 npm run dev
+```
 
-## Learn More
+## Source Maps
+6. Run build script to generate source maps. 
+```
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+7. Manually upload source maps
+```
+make upload_sourcemaps
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+8. (Production only) Use the Sentry Webpack Plugin
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
