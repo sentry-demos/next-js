@@ -32,6 +32,7 @@ Official documentation:
     | react | 16.13.1 |
     | react-dom | 16.13.1 |
     | swr | ^0.2.0 |
+    | dotenv | ^8.2.0 |
     | node.js | 13.8.0 |
 
 #### Instructions
