@@ -13,8 +13,8 @@ module.exports = withSourceMaps({
       config.resolve.alias['@sentry/node'] = '@sentry/browser'
     }
 
-    // SentryCliPlugin - Use only in Production! This will keep generating and uploading source maps
-    // on every render.
+    // SentryCliPlugin - Use only when running the production app. This will keep generating and uploading source maps
+    // on every render if used in dev.
 
     // config.plugins.push(
     //   new SentryCliPlugin({
