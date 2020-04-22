@@ -30,6 +30,6 @@ npm run build
 make upload_sourcemaps
 ```
 
-8. (Production only) Use the Sentry Webpack Plugin
+8. (Production only) Alternative to manually uploading source maps, use the Sentry Webpack Plugin. (Uncomment in `next.config.js`)
 
 
