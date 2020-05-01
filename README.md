@@ -40,7 +40,7 @@ Official documentation:
 
 2. Install dependencies
 ```
-npm install
+$ npm install
 ```
 
 3. Create a Sentry project and add your Sentry DSN to `next.config.js`
@@ -51,25 +51,33 @@ npm install
 
 1. Build the app and generate souce maps (this will create a `.next` folder)
 ```
-npm run build
+$ npm run build
 ```
 
 2. Create a release, associate commits, and upload source maps
 ```
-make setup_releases
+$ make setup_releases
 ```
 
 3. Run the development server (include the port you want to use)
 ```
-PORT=5000 npm run dev
+$ PORT=5000 npm run dev
 ```
 
 4. Run the production app (include the port you want to use)
 ```
-PORT=5000 npm run start
+$ PORT=5000 npm run start
 ```
 
 5. (Only use when running the production app) If using `sentry-webpack-plugin`, uncomment the configuration in `next.config.js`
+
+## Updating
+
+1. To upgrade NextJS
+
+```
+$ npm i next@latest react@latest react-dom@latest
+```
 
 ## Additional Documentation
 
