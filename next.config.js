@@ -1,10 +1,10 @@
 const withSourceMaps = require('@zeit/next-source-maps')();
 const { execSync } = require("child_process");
-require('dotenv').config()
 // const SentryCliPlugin = require('@sentry/webpack-plugin');
 
 module.exports = withSourceMaps({
   env: {
+    dsn: "SENTRY_DSN",
     release: execSync('git rev-parse HEAD').toString()
   },
   webpack(config, options) {

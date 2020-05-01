@@ -2,10 +2,9 @@
 
 import React, {useState} from 'react'
 import * as Sentry from '@sentry/node'
-require('dotenv').config()
 
 Sentry.init({
-  dsn: process.env.SENTRY_DSN,
+  dsn: process.env.dsn,
   release: process.env.release,
   debug: true,
 });

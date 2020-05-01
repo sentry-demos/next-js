@@ -28,11 +28,10 @@ Official documentation:
     | sentry-cli | 1.52.1 |
     | @sentry/webpack-plugin | ^1.10.0 |
     | @zeit/next-source-maps | 0.0.4-canary.1 |
-    | next | 9.3.4
+    | next | 9.3.6
     | react | 16.13.1 |
     | react-dom | 16.13.1 |
     | swr | ^0.2.0 |
-    | dotenv | ^8.2.0 |
     | node.js | 13.8.0 |
 
 #### Instructions
@@ -44,7 +43,7 @@ Official documentation:
 npm install
 ```
 
-3. Create a Sentry project and add your Sentry DSN to `SENTRY_DSN` in `.env`
+3. Create a Sentry project and add your Sentry DSN to `next.config.js`
 
 4. Include your `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, and `SENTRY_PROJECT` to the `Makefile`. If you haven't created an Auth Token, you can create one from your Sentry organization on the [API Keys](https://sentry.io/settings/account/api/auth-tokens/) page. Make sure that your GitHub repo is integrated with your Sentry Organization.
 
