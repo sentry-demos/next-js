@@ -12,6 +12,12 @@ export default function serverError() {
     <div>
       <MainHeader />
       <h1>Internal Server Error</h1>
+      <style jsx>{`
+        h1 {
+          text-align: center;
+          font: 30px sans-serif;
+        }
+      `}</style>
     </div>
   );
 }
