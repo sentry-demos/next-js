@@ -11,7 +11,7 @@ You'll also be able to do the following:
 - Capture the user
 - Associate commits (make sure that your GitHub repo is integrated into your Sentry organization)
 - Manaully upload source maps using `sentry-cli`
-- Automatically upload source maps using the `sentry-webpack-plugin`. (Use with `npm run start`. This is an alternative to manually uploading source maps)
+- Automatically upload source maps using the `sentry-webpack-plugin`. (Use with `npm run start`/production. This is an alternative to manually uploading source maps)
 
 Official documentation:
 - [Sentry JavaScript](https://docs.sentry.io/platforms/javascript/)
@@ -43,7 +43,7 @@ Official documentation:
 $ npm install
 ```
 
-3. Create a Sentry project and add your Sentry DSN to `next.config.js`
+3. Create a Sentry project and replace `SENTRY_DSN` with your Sentry DSN in `next.config.js`
 
 4. Include your `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, and `SENTRY_PROJECT` to the `Makefile`. If you haven't created an Auth Token, you can create one from your Sentry organization on the [API Keys](https://sentry.io/settings/account/api/auth-tokens/) page. Make sure that your GitHub repo is integrated with your Sentry Organization.
 
@@ -59,14 +59,14 @@ $ npm run build
 $ make setup_releases
 ```
 
-3. Run the development server (include the port you want to use)
+3. Run the development server
 ```
-$ PORT=5000 npm run dev
+$ npm run dev
 ```
 
-4. Run the production app (include the port you want to use)
+4. Run the production app
 ```
-$ PORT=5000 npm run start
+$ npm run start
 ```
 
 5. (Only use when running the production app) If using `sentry-webpack-plugin`, uncomment the configuration in `next.config.js`

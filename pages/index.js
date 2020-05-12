@@ -5,6 +5,12 @@ const Home = () => (
   <div>
     <MainHeader/>
     <h1>Home</h1>
+    <style jsx>{`
+      h1 {
+        text-align: center;
+        font: 30px sans-serif;
+      }
+    `}</style>
   </div>
 )
 
