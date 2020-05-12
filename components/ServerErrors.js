@@ -47,6 +47,11 @@ const ServerErrors = () => {
           color: white;
           display: block;
         }
+        .server p{
+          color: black;
+          font-size: 15px;
+          display: block;
+        }
         .server li:hover{
           background: #423B87;
           cursor: pointer;

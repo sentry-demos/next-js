@@ -22,13 +22,15 @@ const ClientErrors = () => {
       <h1>Client</h1>
       <ul>
         <li>
-          <a href='#' onClick={notAFunction}>TypeError</a>
-          <p><code>3.toUpperCase is not a function</code></p>
+          <a href='#' onClick={notAFunction}>TypeError
+            <p><code>3.toUpperCase is not a function</code></p>
+          </a>
         </li>
         <li>
-          <a href='#' onClick={rangeError}>RangeError</a>
-          <p><code>Maximum call stack size exceeded
-          </code></p>
+          <a href='#' onClick={rangeError}>RangeError
+            <p><code>Maximum call stack size exceeded
+            </code></p>
+          </a>
         </li>
       </ul>
       <style jsx>{`
@@ -57,6 +59,11 @@ const ClientErrors = () => {
         .client a {
           text-decoration: none;
           color: white;
+          display: block;
+        }
+        .client p{
+          color: black;
+          font-size: 15px;
           display: block;
         }
         .client li:hover{
