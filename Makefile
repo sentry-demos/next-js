@@ -2,8 +2,8 @@
 # Following variable must be passed in
 SENTRY_AUTH_TOKEN=
 
-SENTRY_ORG=
-SENTRY_PROJECT=
+SENTRY_ORG=testorg-az
+SENTRY_PROJECT=next-js
 VERSION=`sentry-cli releases propose-version`
 
 setup_release: create_release associate_commits upload_sourcemaps

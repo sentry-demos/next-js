@@ -87,3 +87,11 @@ $ npm i next@latest react@latest react-dom@latest
 - This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app)
 
 ## GIF
+
+#### Client
+
+![NextJS Demo Client](next-js-demo-client.gif)
+
+#### Server
+
+![NextJS Demo Server](next-js-demo-server.gif)
