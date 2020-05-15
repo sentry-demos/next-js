@@ -15,4 +15,4 @@ associate_commits:
 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits --auto $(VERSION)
 
 upload_sourcemaps:
-	sentry-cli releases files $(VERSION) upload-sourcemaps .next --rewrite --url-prefix '~/_next'
+	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(VERSION) upload-sourcemaps .next --rewrite --url-prefix '~/_next'

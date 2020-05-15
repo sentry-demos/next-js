@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const ServerErrors = () => {
 
   return (
@@ -7,16 +5,10 @@ const ServerErrors = () => {
       <h1>Server</h1>
       <ul>
         <li>
-          <Link href='/api/api1'>
-            <a>Internal Server Error</a>
-          </Link>
-          <p><code>with captureException</code></p>
+          <a href='/api/api1'>Internal Server Error<p><code>with captureException</code></p></a>
         </li>
         <li>
-          <Link href='/testErrors/testInternalError'>
-            <a>Internal Server Error</a>
-          </Link>
-          <p><code>with captureMessage</code></p>
+          <a href='/testErrors/testInternalError'>Internal Server Error<p><code>with captureMessage</code></p></a>
         </li>
       </ul>
       <style jsx>{`

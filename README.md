@@ -47,11 +47,11 @@ $ npm install
 
 4. Include your `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, and `SENTRY_PROJECT` to the `Makefile`. If you haven't created an Auth Token, you can create one from your Sentry organization on the [API Keys](https://sentry.io/settings/account/api/auth-tokens/) page. Make sure that your GitHub repo is integrated with your Sentry Organization.
 
-## Run
+## Run Dev
 
-1. Build the app and generate souce maps (this will create a `.next` folder)
+1. Run the dev server and generate souce maps for the dev environment (this will create a `.next` folder)
 ```
-$ npm run build
+$ npm run dev
 ```
 
 2. Create a release, associate commits, and upload source maps
@@ -59,17 +59,27 @@ $ npm run build
 $ make setup_releases
 ```
 
-3. Run the development server
+## Run Production
+
+1. Build the production app and generate souce maps (this will create a `.next` folder)
+
+2. Create a release, associate commits, and upload source maps
 ```
-$ npm run dev
+$ make setup_releases
 ```
 
-4. Run the production app
+3. If you only need to upload source maps
+
+```
+make upload_sourcemaps
+```
+
+4. If using `sentry-webpack-plugin`, uncomment the configuration in `next.config.js`
+
+5. Run the production app
 ```
 $ npm run start
 ```
-
-5. (Only use when running the production app) If using `sentry-webpack-plugin`, uncomment the configuration in `next.config.js`
 
 ## Updating
 
