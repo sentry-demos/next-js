@@ -1,0 +1,21 @@
+{
+  "name": "nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5000",
+    "build": "next build",
+    "start": "next start -p 5000",
+    "predeploy": "make setup_release"
+  },
+  "dependencies": {
+    "@sentry/browser": "^5.15.4",
+    "@sentry/node": "^5.15.4",
+    "@sentry/webpack-plugin": "^1.10.0",
+    "@zeit/next-source-maps": "0.0.4-canary.1",
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "swr": "^0.2.0"
+  }
+}
