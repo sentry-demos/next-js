@@ -25,7 +25,7 @@ Official documentation:
     | ------------- |:-------------:| 
     | @sentry/browser | ^5.15.4 |
     | @sentry/node | ^5.15.4 |
-    | sentry-cli | 1.52.1 |
+    | sentry-cli | 1.53.0 |
     | @sentry/webpack-plugin | ^1.10.0 |
     | @zeit/next-source-maps | 0.0.4-canary.1 |
     | next | 9.3.6
@@ -56,16 +56,19 @@ $ npm run dev
 
 2. Create a release, associate commits, and upload source maps
 ```
-$ make setup_releases
+$ make setup_release
 ```
 
 ## Run Production
 
 1. Build the production app and generate souce maps (this will create a `.next` folder)
+```
+$ npm run build
+```
 
 2. Create a release, associate commits, and upload source maps
 ```
-$ make setup_releases
+$ make setup_release
 ```
 
 3. If you only need to upload source maps
